@@ -1,0 +1,105 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 4px;
+  font-family: Korolev;
+  max-width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.hidden-mobile {
+  display: flex !important;
+}
+
+.btn-sm {
+  width: 140px;
+  height: 32px;
+}
+
+.btn-lg {
+  width: 240px;
+  height: 40px;
+}
+
+.btn-red {
+  background: #FF4946;
+}
+
+.btn-red:hover {
+  background: rgb(224, 56, 53);
+}
+
+.btn-blue {
+  background:#46A6FF;
+}
+
+.main-nav__ul > li > .btn:hover {
+  color: #FFF !important;
+}
+
+.btn-fb {
+  background: #4065B4;
+}
+
+.btn-fb:hover {
+  background: rgb(48, 81, 153);
+}
+
+.btn-empty {
+  background: none;
+  border: 1px solid #FFF;
+}
+
+.btn-empty:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.no-border {
+  border: none;
+}
+
+@media screen and (max-width: 970px) {
+  .btn {
+    font-size: 11px;
+  }
+
+  .btn-sm {
+    width: 100px;
+    height: 26px;
+  }
+  
+  .btn-lg {
+    width: 200px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn {
+    font-size: 15px;
+  }
+
+  .btn.w-sm-100 {
+    max-width: 250px !important;
+  }
+
+  .btn-sm {
+    height: 34px;
+  }
+  
+  .btn-lg {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn.hidden-mobile { display: none !important; } 
+}

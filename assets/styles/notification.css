@@ -1,0 +1,23 @@
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #FFF;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.notification__error {
+  background: #B70001;
+}
+
+@media screen and (max-width: 750px) {
+  .notification {
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
+}

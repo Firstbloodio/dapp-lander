@@ -1,0 +1,587 @@
+.section-title {
+  color: #A2A1A7;
+  font-family: Korolev;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+.section-title--large {
+  font-size: 48px;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.section__with-shadow {
+  position: relative;
+  z-index: 10;
+}
+
+.section__content-description {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.section__with-shadow:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+}
+
+.section__border-separator {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(to right, rgba(33,29,63,0) 0%, #6D64AD 50%, rgba(33,29,63,0) 100%);
+}
+
+.section__featured {
+  /* background: linear-gradient(to right, #141124 0%, #1F1B36 50%, #141124); */
+  background: linear-gradient(to bottom, #242244 0%, #294E60 100%);
+}
+
+.section__featured-item {
+  display: flex;
+  align-items: center;
+  min-height: 91px;
+  justify-content: center;
+}
+
+.section__featured-item img {
+  max-width: 120px;
+}
+
+.hero-container {
+  margin-top: -70px; /* same value as navbar height */
+  background-image: url('../img/1x/IMG_ArtHero2.jpg');
+  background-size: cover;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-mockups {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-image: url('../img/1x/hero_mockups.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 695px;
+  height: 269px;
+  z-index: 90;
+  /* transition: transform 700ms ease-in-out; */
+}
+
+.section__supported-games-wrapper {
+  background-color: #221e39;
+}
+
+.section__supported-games {
+  height: 325px;
+  background-image: url('../img/1x/section_supported-games_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.supported-game__asterisk {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  opacity: 0.5;
+}
+
+.supported-game--right .supported-game__asterisk {
+  right: -30px;
+}
+
+.section__supported-games a {
+  font-size: 14px;
+}
+
+.supported-game {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 260px;
+}
+
+.supported-game--image {
+  height: 80px;
+}
+
+.supported-game--left {
+  transform: translateX(-150%);
+}
+
+.supported-game--right {
+  transform: translateX(-50%);
+}
+
+.section__compete-win-earn {
+  background: linear-gradient(to right, #141124 0%, #1F1B36 50%, #141124 100%);
+  padding-top: 125px;
+}
+
+.section__free-tournaments {
+  padding-top: 100px;
+}
+
+.section__compete-win-earn-container {
+  max-width: 1010px;
+}
+
+.section__compete-win-earn-columns {
+  display: grid;
+  grid-template-columns: 25.333333333% 25.333333333% 25.333333333%;
+  grid-template-rows: 260px;
+  grid-gap: 12%;
+}
+
+.section__compete-win-earn-column {
+  background: #2E284A;
+  position: relative;
+  border-radius: 30px;
+  padding: 0 5px;
+}
+
+.section__compete-win-earn-column-title {
+  font-size: 20px;
+  padding-top: 115px;
+}
+
+.section__compete-win-earn-column-content {
+  height: 75px;
+  color: #B8B6C0;
+  line-height: 24px;
+  padding: 12px;
+}
+
+.section__compete-win-earn-column-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+}
+
+.section__compete-win-earn-column-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -70px;
+  color: #fff;
+}
+
+.section__free-tournaments {
+  background: linear-gradient(to bottom, #242244 0%, #294E60 100%);
+}
+
+.section__free-tournaments-subtitle {
+  font-size: 34px;
+}
+
+.free-tournaments {
+  background-image: url('../img/1x/free_tournaments_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1009px;
+  margin: -250px auto 0;
+  position: relative;
+}
+
+.free-tournaments__tournaments {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 400px);
+  width: 348px;
+  z-index: 10;
+}
+
+.free-tournaments__badges {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 345px);
+  z-index: 20;
+  width: 200px;
+}
+
+.browse-tournaments {
+  margin-top: -150px;
+  position: relative;
+  z-index: 50;
+}
+
+.tournament-features {
+  display: grid;
+  grid-template-columns: 25.333333333% 25.333333333% 25.333333333%;
+  grid-template-rows: 330px;
+  grid-gap: 12%;
+  margin-top: 110px;
+}
+
+.tournament-feature {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 4px;
+  position: relative;
+}
+
+.tournament-feature__title {
+  font-size: 28px;
+  padding-top: 90px;
+  height: 160px;
+}
+
+.tournament-feature__content {
+  height: 100px;
+  color: #B8B6C0;
+  line-height: 24px;
+  padding: 0 25px;
+}
+
+.tournament-feature__image-wrap {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  background: #436B7E;
+  border-radius: 90px;
+}
+
+.section__matchmaking {
+  height: 760px;
+  background-image: url('../img/1x/withdrawals_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__withdrawals {
+  height: 760px;
+  background-image: url('../img/1x/matchmaking_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__blockchain {
+  height: 760px;
+  background-image: url('../img/1x/blockchain_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__footer-banner {
+  height: 520px;
+  background: linear-gradient(to bottom, #242244 0%, #294E60 100%);
+}
+
+.section__matchmaking-banner-image {
+  width: 420px;
+}
+
+.section__withdrawals-banner-image {
+  width: 400px;
+}
+
+.section__blockchain-banner-image {
+  width: 576px;
+}
+
+.section__automate-tournaments-banner-image {
+  width: 598px;
+}
+
+.section__weekly-ladders {
+  height: 760px;
+  background-image: url('../img/1x/weekly_ladder_bg.jpg'), linear-gradient(to bottom, #242244 0%, #294E60 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__automate-tournaments {
+  height: 760px;
+  background-image: url('../img/1x/automated_tournaments_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__weekly-ladders-banner-image {
+  width: 540px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1280px) {
+  .section__compete-win-earn-columns,
+  .tournament-features {
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+  }
+
+  .hero-mockups {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .hero-container {
+    min-height: 700px;
+  }
+
+  .supported-game--left {
+    transform: translateX(-120%);
+  }
+
+  .supported-game--right {
+    transform: translateX(20%);
+  }
+
+  .section__free-tournaments {
+    padding-top: 100px;
+  }
+
+  .section-title--large {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .section__free-tournaments-subtitle {
+    font-size: 28px;
+  }
+
+  .tournament-features {
+    grid-template-rows: 300px;
+  }
+
+  .free-tournaments {
+    height: 940px;
+  }
+
+  .free-tournaments__tournaments {
+    width: 300px;
+  }
+
+  .free-tournaments__badges {
+    width: 160px;
+  }
+
+  .tournament-feature__title {
+    font-size: 22px;
+    padding-top: 60px;
+  }
+
+  .tournament-feature__content {
+    font-size: 13px;
+  }
+
+  .section__compete-win-earn {
+    padding-top: 125px;
+  }
+
+  .section__matchmaking,
+  .section__weekly-ladders,
+  .section__withdrawals,
+  .section__automate-tournaments,
+  .section__blockchain {
+    height: 750px;
+  }
+
+  .section__footer-banner {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section__matchmaking,
+  .section__weekly-ladders,
+  .section__withdrawals,
+  .section__automate-tournaments,
+  .section__blockchain {
+    height: auto;
+    background-image: none;
+  }
+
+  .section__featured-item {
+    display: block;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .section__weekly-ladders,
+  .section__automate-tournaments {
+    background: linear-gradient(to bottom, #242244 0%, #294E60 100%);
+  }
+
+  .hero-container {
+    background: none;
+  }
+
+  header {
+    padding-top: 70px;
+  }
+
+  .hero-mockups {
+    background-size: 100%;
+  }
+
+  .hero-container {
+    min-height: 660px;
+  }
+
+  .section__supported-games {
+    background-image: url('../img/1x/section_supported-games_bg-mobile.jpg') !important;
+    height: 342px;
+    padding: 0 !important;
+  }
+
+  .section__supported-games-wrapper > .container {
+    padding: 0 !important;
+  }
+
+  .supported-game {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 40%;
+    transform: none;
+    margin: 0 auto;
+    height: 50%;
+  }
+
+  .supported-game--image {
+    height: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .supported-game__asterisk {
+    top: 40px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .section__compete-win-earn {
+    padding: 100px 0 30px;
+  }
+
+  .section__compete-win-earn-columns,
+  .tournament-features {
+    grid-template-columns: 320px;
+    grid-gap: 90px;
+    grid-template-rows: auto;
+  }
+
+  .section__compete-win-earn-column-title {
+    padding-top: 85px;
+  }
+
+  .section__compete-win-earn-column-content {
+    align-items: flex-start;
+  }
+
+  .free-tournaments {
+    background: none;
+    height: auto;
+    margin: 80px auto 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .free-tournaments__tournaments {
+    position: relative;
+    left: auto;
+    transform: none;
+    width: auto;
+  }
+
+  .free-tournaments__badges {
+    top: 0;
+    transform: translate(-50%, -50px)
+  }
+
+  .browse-tournaments {
+    margin-top: 30px;
+  }
+
+  .section-title--large {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .section__free-tournaments {
+    padding-top: 60px;
+  }
+
+  .section__free-tournaments-subtitle {
+    font-size: 20px;
+  }
+
+  .tournament-feature__content {
+    height: auto;
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+  }
+
+  .tournament-feature__title {
+    padding: 60px 0 20px;
+    height: auto;
+  }
+
+  .section__content-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .section__footer-banner {
+    height: 370px;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    margin: 30px 0;
+  }
+
+  .footer__logo-wrapper {
+    padding-top: 40px;
+  }
+
+  .footer-nav__ul {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .supported-game {
+    width: 60%;
+  }
+
+  .hero-mockups {
+    background-size: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section__compete-win-earn-columns,
+  .tournament-features {
+    grid-template-columns: 1fr;
+  }
+}

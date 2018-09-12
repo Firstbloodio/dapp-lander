@@ -1,0 +1,11 @@
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  align-items: center;
+  border-radius: 4px;
+  background: #FFF;
+  border: none;
+  font-size: 14px;
+  padding: 0 15px;
+}

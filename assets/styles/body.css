@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background: #141124;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

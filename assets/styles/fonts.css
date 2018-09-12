@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Korolev;
+  font-weight: 600;
+  font-style: normal;
+  src: url('../fonts/korolev-medium-webfont.ttf');
+}
+
+@font-face {
+  font-family: Korolev;
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/korolev-bold-webfont.ttf');
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.blue-link {
+  color: #4167A7;
+}
+
+.light-blue-link {
+  color: #49A9E0;
+}
+
+.font-korolev {
+  font-family: Korolev;
+}
+
+.font-normal {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 66px;
+}
+
+.white-text {
+  color: #FFF !important;
+}
+
+.light-blue-text {
+  color: #8ABAE7;
+}
+
+.green-text {
+  color: #49B883;
+}
+
+@media screen and (max-width: 970px) {
+  h1 {
+    font-size: 34px;
+    line-height: 54px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .text-center-sm { text-align: center; }
+}
